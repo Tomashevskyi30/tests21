@@ -6,6 +6,8 @@
   "scripts": {
     "dev": "npx supervisor -i .next,node_modules -e html,js,env server.js",
     "build": "next build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "node server"
   },
   "repository": {
@@ -17,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/auth0-blog/nextjs-passport/issues"
   },
-  "homepage": "https://github.com/auth0-blog/nextjs-passport#readme",
+  "homepage": "https://tomashevskyi30.github.io/tests21",
   "dependencies": {
     "axios": "^0.19.0",
     "body-parser": "^1.19.0",
